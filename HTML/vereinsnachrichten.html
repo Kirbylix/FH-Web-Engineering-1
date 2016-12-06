@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<title>Minions</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<body>
+		<!-- header -->
+		<header>
+			<figure>
+				<img class="logo" align="middle" src="./img/logo.gif"/>
+			</figure>
+            <h1>The Minions</h1>
+		</header>
+		<!-- nav -->
+		<nav>
+            <a href="main.html">Hauptseite</a>
+			<a href="vorstand.html">Vorstand</a>
+			<a href="vereinsnachrichten.html">Vereinsnachrichten</a>
+		</nav>
+		<!-- section -->
+		<section>
+			<h2>Vereinsnachrichten</h2>
+			<form action="vereinsnachrichten.html" method="get">
+			<fieldset>
+				<legend>Sender</legend>
+				<p>Name:<input type="text" name="name" autofocus pattern="[A-Za-z]"/></p>
+				<p>Nachname:<input type="text" name="nachname" pattern="[A-Za-z]"/></p>
+				<p>E-Mail*:<input type="email" required="required" name="email"/></p>
+			</fieldset>
+			<fieldset>
+				<legend>Nachricht</legend>
+				<p>Datum:<input type="date" id="nowDate" name="datum"/></p>
+				<p>Kategorie:
+					<select name="kategorie"/>
+						<option value="news">News</option>
+						<option value="vorstand">Vorstand</option>
+						<option value="manschaft">Manschaft</option>
+						<option value="beschwerde">Beschwerde</option>
+					</select>
+				</p>
+				<p>Ueberschrieft:<input type="text" name="ueberschrieft"/></p>
+				<p>Nachricht:<textarea name="nachricht"rows="5"></textarea></p>
+			</fieldset>
+				<p><input type="reset" />
+				<input type="submit" /></p>
+				
+			</form>
+			<p>*Mussfeld</p>
+		</section>
+		<!-- footer -->
+		<footer>
+			<p>Copyright &copy; Kai Kappis 2015. All Rights Reserved.</p>
+		</footer>
+	</body>
+</html>
